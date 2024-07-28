@@ -12,8 +12,8 @@
 
 .modal-content {
     position: relative;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .modal-content img {
@@ -24,39 +24,39 @@
 
 .close {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 20px;
-    color: white;
-    font-size: 40px;
+    color: #808D7C;
+    font-size: 50px;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.7s;
-}
-.close:hover{
-    color:red;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
-    color: white;
+    color: #808D7C;
     font-size: 30px;
-    font-weight: 500;
     background: none;
     border: none;
     cursor: pointer;
     user-select: none;
+
 }
 
 .prev {
     left: 10px;
 }
-.prev:hover{
-   color: green;
-}
+
 .next {
     right: 10px;
 }
-.next:hover{
-    color: green;
+
+@media (max-width: 480px) {
+    .close,
+    .prev,
+    .next {
+        font-size: 30px;
+    }
 }
